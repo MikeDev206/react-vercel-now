@@ -6,7 +6,7 @@ class MentorList extends Component {
   constructor() {
     super();
     this.state = {
-      mentorsList: {}
+      mentorsList: {},
     };
   }
 
@@ -70,7 +70,7 @@ class MentorList extends Component {
                   </tr>
                 </thead>
                 <tbody>
-                  {Object.keys(this.state.mentorsList).map( (key, index) => {
+                  {Object.keys(this.state.mentorsList).map((key, index) => {
                     let mentorName = this.state.mentorsList[key].name;
                     let mentorEmail = this.state.mentorsList[key].email;
                     let mentorModule = this.state.mentorsList[key].module;
